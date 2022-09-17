@@ -14,16 +14,16 @@
         <form method="post" action="traitement.php"> 
 
                 <label for="Prénom"> Prénom : </label>
-                <input type="text" name="prénom" id="Prénom" placeholder="Ex : Gerdur" size="20"/>
+                <input type="text" name="prénom" id="Prénom" placeholder="Ex : Gerdur" size="20" required/>
            
             <br>
 
                 <label for="Nom"> Nom : </label>
-                <input type="text" name="Nom" id="Nom" placeholder="Ex : De rivebois" size="20"/>
+                <input type="text" name="Nom" id="Nom" placeholder="Ex : De rivebois" size="20" required/>
 
             <br>
                 <label for="age"> Votre Âge :</label>
-                <input type="number" min="0" max="120" step="1"/>
+                <input type="number" min="0" max="120" step="1" required/>
 
             <br>
                 <label for="sex"> Sexe : </label>
@@ -45,7 +45,7 @@
             <br>
 
                 <label for="Adresse P."> Adresse Postal </label>
-                <input type="text" name="Adresse Postal" id="Adresse P." placeholder="12 rue de la contré de Rivebois" size="30"/>
+                <input type="text" name="Adresse Postal" id="Adresse P." placeholder="12 rue de la contré de Rivebois" size="30" required/>
 
             <br>
                 <label for="codepostal"> Code Postal :</label>
@@ -54,11 +54,29 @@
 
             <br> 
                 <label for="Ville."> Ville </label>
-                <input type="text" name="Ville" id="Ville" placeholder="Rivebois" size="20"/>
+                <input type="text" name="Ville" id="Ville" placeholder="Rivebois" size="20" required/>
 
             <br>
                 <label for="métier"> Métier éxercé </label>
-                <input type="text" name="métier" id="métier" placeholder="gérente d'une scierie" size="20"/>
+                <select name="Nationalité" id="Nationalité">
+
+                        <option value="Non-précisé"> Non-précisé </option>
+
+                    <optgroup label="Manuel"></optgroup>
+
+                    
+                        <option value="Maçon"> Maçon </option>
+                        <option value="Charpentier"> Charpentier </option>
+                        <option value="Autre"> Autre </option>
+
+                    <optgroup label="Informatique"></optgroup>
+
+                    
+                        <option value="Technicien Helpdesk"> Technicien Helpesk </option>
+                        <option value="Technicien informatique"> Technicien informatique </option>
+                        <option value="Autre"> Autre </option>
+
+            </select>
 
             <br>
                 <label for="Nationalité"> Nationalité : </label>
@@ -75,10 +93,50 @@
                         <option value="Italien"> Italien </option>
                         <option value="Autre"> Autre </option>
 
-             </select>    
+                </select>    
 
+             <br>
+                    <label for="date N"> Date de naissance : </label>
+                    <input type="date" id="date N" name="date naissance" value="2022-12-31" min="1920-01-01" max="2022-12-31">
 
-             
+            <br>
+                <label for="Naissance"> Pays de Naissance : </label>
+                 <select name="Naissance" id="Naissance">
+
+                        <option value="Non-précisé"> Non-précisé </option>
+
+                    <optgroup label="Europe"></optgroup>
+
+                    
+                        <option value="Français"> Français </option>
+                        <option value="Allemand"> Allemand </option>
+                        <option value="Espagnol"> Espagnol </option>
+                        <option value="Italien"> Italien </option>
+                        <option value="Autre"> Autre </option>
+
+                    </select>
+
+            <br>
+                <label for="secu"> Numéro de Sécurité Social :</label>
+                <input type="text" minlength="15" maxlength="15" placeholder="numéro de sécurité social à 15 chiffres" required size="30">
+
+            <br>
+                <label for="passeport"> Numéro du passeport :</label>
+                <input type="text" minlength="2" maxlength="2"  placeholder="2 chiffres" required size="3">
+                <input type="text" minlength="2" maxlength="2" placeholder="2 lettres" required size="3">
+                <input type="text" minlength="5" maxlength="5" placeholder="5 chiffres" required size="3">
+
+            <br> 
+                <label for="date DP"> Date de Délivrence du Passeport : </label>
+                <input type="date" id="date DP" name="Date DP" value="2022-12-31" min="1920-01-01" max="2022-12-31">
+
+            <br>
+                <label for="date VP"> Date de Validité du Passeport : </label>
+                <input type="date" id="date VP" name="Date VP" value="2022-12-31" min="1920-01-01" max="2032-12-31">
+
+            <br> 
+                <input type="submit" value="envoyer"/>
+
     </body>
 
 </html>

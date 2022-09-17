@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Fr">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brief Formulaire</title>
+
+    </head>
+
+    <body>
+    
+        <form method="post" action="traitement.php"> 
+
+                <label for="Prénom"> Prénom : </label>
+                <input type="text" name="prénom" id="Prénom" placeholder="Ex : Gerdur" size="20"/>
+           
+            <br>
+
+                <label for="Nom"> Nom : </label>
+                <input type="text" name="Nom" id="Nom" placeholder="Ex : De rivebois" size="20"/>
+
+            <br>
+                <label for="age"> Votre Âge :</label>
+                <input type="number" min="0" max="120" step="1"/>
+
+            <br>
+                <label for="sex"> Sexe : </label>
+                <select name="sex" id="sex">
+
+                    <optgroup label="sexe"></optgroup>
+
+                         <option value="Non-précisé"> Non-précisé </option>
+                         <option value="Femme"> Femme </option>
+                         <option value="Homme"> Homme </option>
+                         <option value="Non-binaire"> Non-binaire </option>
+
+                </select>
+            
+            <br>
+                <label id="email"> Adresse Mail : </label>
+                <input type="email" name="email" id="email" size="30" required>
+
+            <br>
+                <label for="codepostal"> Code Postal :</label>
+                <input type="text" maxlength="5" pattern="[0-9]{5}" placeholder="code postal à 5 chiffres" required>
+                <input type="submit" value="test" />
+
+
+    </body>
+
+</html>

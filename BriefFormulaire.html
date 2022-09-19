@@ -23,7 +23,7 @@
 
             <br>
                 <label for="age"> Votre Âge :</label>
-                <input type="number" min="0" max="120" step="1" required/>
+                <input type="number" id="age" min="0" max="120" step="1" required/>
 
             <br>
                 <label for="sex"> Sexe : </label>
@@ -39,8 +39,8 @@
                 </select>
             
             <br>
-                <label id="email"> Adresse Mail : </label>
-                <input type="email" placeholder="Ex : gerdurderivebois@email.com" name="email" id="email" size="30" required>
+                <label for="email"> Adresse Mail : </label>
+                <input type="email" placeholder="Ex : gerdurderivebois@email.com" id="email" size="30" required>
 
             <br>
 
@@ -49,16 +49,16 @@
 
             <br>
                 <label for="codepostal"> Code Postal :</label>
-                <input type="text" maxlength="5" pattern="[0-9]{5}" placeholder="code postal à 5 chiffres" required>
+                <input type="text" id="codepostal" maxlength="5" pattern="[0-9]{5}" placeholder="code postal à 5 chiffres" required>
                 <input type="submit" value="test" />
 
             <br> 
-                <label for="Ville."> Ville </label>
+                <label for="Ville"> Ville </label>
                 <input type="text" name="Ville" id="Ville" placeholder="Rivebois" size="20" required/>
 
             <br>
                 <label for="métier"> Métier éxercé </label>
-                <select name="Nationalité" id="Nationalité">
+                <select name="métier" id="métier">
 
                         <option value="Non-précisé"> Non-précisé </option>
 
@@ -118,11 +118,11 @@
 
             <br>
                 <label for="secu"> Numéro de Sécurité Social :</label>
-                <input type="text" minlength="15" maxlength="15" placeholder="numéro de sécurité social à 15 chiffres" required size="30">
+                <input type="text" id="secu" minlength="15" maxlength="15" placeholder="numéro de sécurité social à 15 chiffres" required size="30">
 
             <br>
                 <label for="passeport"> Numéro du passeport :</label>
-                <input type="text" minlength="2" maxlength="2"  placeholder="2 chiffres" required size="3">
+                <input type="text" id="passeport" minlength="2" maxlength="2"  placeholder="2 chiffres" required size="3">
                 <input type="text" minlength="2" maxlength="2" placeholder="2 lettres" required size="3">
                 <input type="text" minlength="5" maxlength="5" placeholder="5 chiffres" required size="3">
 
